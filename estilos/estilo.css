@@ -1,0 +1,196 @@
+.cuadros{
+    
+    display: grid;
+    grid-template-columns: 90% 10%;
+    gap: 10px; 
+    max-width: 800px;
+    
+
+}
+body{
+    background-color: aliceblue;
+}
+
+.cuadro_texto{
+    width: 250px;
+    height: 400px;
+    font-size: medium;
+    border: none;
+}
+
+.cuadro_textouno{
+    margin-left: 100px;
+   
+    width: 525px;
+    height: 400px;
+    border: none;
+    font-size: x-large;
+    
+}
+
+textarea{
+    resize: none;
+    background: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+p{
+    text-align: center;
+}
+.botones{
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+.botonesuno{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 60px;
+    
+}
+
+.ingresos{
+   
+    padding-left: 20px;
+    border-radius: 2ch;
+    
+}
+
+
+
+.espaciodos{
+    text-align: center;
+    width: 315px;
+    height: 480px;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    
+    
+ 
+}
+ .boton{
+    padding: 15px 110px;
+    
+    color: black;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: black;  
+ }
+
+ .sugerencia {
+    background: grey; /* Degradado de colores */
+    -webkit-background-clip: text; /* Clip de fondo solo para el texto */
+    color: transparent; /* Hace que el texto sea transparente para ver el degradado de fondo */
+    display: inline-block; /* Para que el degradado se aplique correctamente al texto */
+    margin-left: 90px;
+  }
+
+ .btn_especial{
+    background-color: blue;
+    color: white;
+    
+ }
+ .btn_especial:hover{
+    background-color: darkblue;
+ }
+ 
+ 
+
+ .ingreso{
+    padding-top: 30px;
+    padding-left: 50px;
+ }
+
+ #aviso{
+    color: red;
+    font-family: cursive;
+ }
+ 
+ /* Estilo para tablets (por ejemplo, iPads) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Agrega tus estilos para tablets aquí */
+}
+
+/* Estilo para dispositivos móviles (celulares) */
+@media only screen and (max-width: 767px) {
+    .cuadros{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center; /* Opcional: centra horizontalmente los elementos */
+        gap: 10px;
+
+        
+    }
+    .cuadro_textouno{
+        margin-left: 0px;
+       
+        width: 300px;
+        height: 200px;
+        border: none;
+        font-size: x-large;
+    }
+
+    
+        .cuadro_texto{
+            width: 200px;
+            height: 100px;
+            font-size: medium;
+        }
+        
+    
+        .ingresos{
+            margin: 0%;
+            padding-right: 300px;
+            padding-left: 10%;
+        }
+        .ingreso{
+            padding-top: 30px;
+            padding-left: 40px;
+         }
+        .espaciodos{
+            
+            height: 200px;
+    
+        }
+
+
+        .copia{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0px;
+            text-align: center;
+        }
+
+        .cajita{
+            width: 50px;
+            text-align: center;
+            text-align: center;
+            margin-top: 5px;
+            padding-left: 60px;
+        }
+        
+        .sugerencia{
+            font-size: x-small;
+            
+        }
+        .boton{
+            text-align: center;
+
+        }
+
+        .obs:hover{
+            background-color: gray;
+
+        }
+
+        
+   
+
+}

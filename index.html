@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="cuadros">
+        
+        <div class="ingreso">
+            <div class="espacio">
+                <textarea  class="cuadro_textouno" autofocus id="entrada" >
+
+                </textarea>
+                <p class="sugerencia"><i class="fas fa-exclamation-circle alert-icon"></i> <i>No ingrese texto en minúscula , ni expresiones regulares</i></p>   
+                <p id="aviso"></p>
+                <div class="botonesuno copia" >
+                    <button class="boton btn_especial cajita" onclick="extraer() " >Encriptar</button>
+                    <button class="boton cajita obs" onclick="desencriptar()" >Desencriptar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ingresos">
+            <div class="espaciodos">
+                <textarea class="cuadro_texto" id="salida" readonly></textarea>
+                <div class="botones " >
+                    <button class="boton obs" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </div>
+</div>
+    
+<script src="js/app.js"></script>
+</body>
+</html>
